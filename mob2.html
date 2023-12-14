@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRODUTE</title>
+    <link rel="stylesheet" href="style02.css">
+    <link rel="icon" href="img/logo.png">
+    <script>
+        function Mobile(){
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);}
+        if (Mobile()){
+        } else {
+        location.href="index1.html";
+        }
+        </script>
+
+</head>
+<body>
+    <div class="menubar">
+        <div class="logo1"><img src="img/logo.png"></div>
+        <div class="logo2"><img src="img/logo2.png"></div>
+        <div class="logo"><img src="img/and.svg" alt=""></div>
+        <div class="menu" id="open"><img src="img/menu.svg" alt=""></div>
+    </div>
+    <ul class="menulist" id="menubox">
+        <li><a href="mob.html">HOME</a></li>
+        <li><a href="mob2.html">INTRODUCE</a></li>
+        <li><a href="mob3.html">DESIGN</li>
+        <li><A href="mob4.html">INTERVIEW</li>
+        <div class="cbt" id="close">CLOSE</div>
+    </ul>
+    
+    <div class="contents"><img src="img/m_2.png"></div>
+    <p>한눈에 알아볼 수 있을 정도로 독창적인 작품들을 창조하는 프랑스 출신의 그래픽 아티스트.<br><br>
+
+        평범한 매일의 일상을 치밀하게 관찰하고 고민하여 위트 있게 표현하는 것으로 유명하다. <br><br>
+        
+        그의 작품 속 표정이 풍부한 캐릭터들은 일상적인 장소에서 등장하고, 평범한 삶을 시각적으로 담아낸다.<br><br>
+        
+        일러스트, 사진, 영상 등의 분야뿐 아니라 의상, 설치, 도서, 포스터, 패션 등 다양한 분야를 넘나들며 창의성을 발휘하고 있으며, 세계적인 브랜드들과의 콜라보를 통해 우리들에게 더욱더 친근한 작가이다.</p>
+   
+</body>
+<script>
+    document.getElementById('open').addEventListener('click',function(){
+        document.getElementById('menubox').style.display = 'block';
+    });
+    document.getElementById('close').addEventListener('click',function(){
+        document.getElementById('menubox').style.display = 'none';
+    });
+</script>
+</html>
